@@ -11,7 +11,6 @@ __version__ = 1.0
 class PKV(object):
 
     def __init__(self, db='pkv.db'):
-        self._data = None
         self._db = db
         self._lock = threading.Lock()
         self._init_db()
@@ -28,6 +27,8 @@ class PKV(object):
     def _load(self):
         f = open(self._db, 'r')
         self._data = load(f.read(), Loader=Loader)
+        if self._data is None:
+            self._data = dict()
         f.close()
 
     def set(self, key, value):
