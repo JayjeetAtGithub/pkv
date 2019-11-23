@@ -5,5 +5,6 @@ setup(name='pkv',
       description='A minimalistic persistent key value store.',
       author='Jayjeet Chakraborty',
       author_email='jayjeetchakraborty25@gmail.com',
+      packages=['pkv'],
       license='MIT',
       zip_safe=False)
