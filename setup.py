@@ -6,4 +6,5 @@ setup(name='pkv',
       author='Jayjeet Chakraborty',
       author_email='jayjeetchakraborty25@gmail.com',
       packages=['pkv'],
+      install_requires=['pyyaml'],
       license='MIT')
