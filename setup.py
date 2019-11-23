@@ -6,5 +6,4 @@ setup(name='pkv',
       author='Jayjeet Chakraborty',
       author_email='jayjeetchakraborty25@gmail.com',
       packages=['pkv'],
-      license='MIT',
-      zip_safe=False)
+      license='MIT')
